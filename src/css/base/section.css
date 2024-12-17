@@ -1,0 +1,50 @@
+/* ================================== Mobile First ==================================*/
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-about-us {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+/* ================================== Tablet Style ==================================*/
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-about-us {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+/* ================================== Desktop Style ==================================*/
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .section-about-us {
+    padding-top: 96px;
+    padding-bottom: 75px;
+  }
+}

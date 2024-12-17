@@ -1,0 +1,23 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 37px;
+  height: 2px;
+  background-color: var(--green);
+}
+
+html {
+  scroll-behavior: smooth;
+}

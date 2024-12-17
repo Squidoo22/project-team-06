@@ -1,0 +1,29 @@
+/* ================================== Mobile First ==================================*/
+
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================================== Tablet Style ==================================*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* ================================== Desktop Style ==================================*/
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1152px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}

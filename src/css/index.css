@@ -1,0 +1,16 @@
+@import url('./utils/variables.css');
+
+@import url('./base/reset.css');
+@import url('./base/common.css');
+@import url('./base/section.css');
+@import url('./base/container.css');
+
+@import url('./layout/header.css');
+@import url('./layout/main-section.css');
+@import url('./layout/about-section.css');
+@import url('./layout/our-lessons-section.css');
+@import url('./layout/proposal-section.css');
+@import url('./layout/our-teachers-section.css');
+@import url('./layout/application-section.css');
+@import url('./layout/reviews-section.css');
+@import url('./layout/footer.css');

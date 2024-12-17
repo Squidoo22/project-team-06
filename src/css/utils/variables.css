@@ -1,0 +1,20 @@
+:root {
+  --black: #121417;
+  --green: #4dc274;
+  --light-green: #d4fde1;
+  --sun-light-green: #bee8cc;
+  --gray: #f3f5f6;
+  --white: #ffffff;
+  --accent: #38ae5f;
+  --alert: #ee323d;
+
+  --green-linear: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+
+  --black-transparrent-1: rgba(18, 20, 23, 0.1);
+  --black-transparrent-2: rgba(18, 20, 23, 0.2);
+  --black-transparrent-3: rgba(18, 20, 23, 0.5);
+  --white-transparrent-1: rgba(255, 255, 255, 0.7);
+  --white-transparrent-2: rgba(255, 255, 255, 0.4);
+
+  --transition: 0.3s ease-in-out;
+}
