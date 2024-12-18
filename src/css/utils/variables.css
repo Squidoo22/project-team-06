@@ -8,6 +8,16 @@
   --accent: #38ae5f;
   --alert: #ee323d;
 
+  --cl-black: 18, 20, 23;          /* #121417 */
+  --cl-green: 77, 194, 116;        /* #4dc274 */
+  --cl-light-green: 212, 253, 225; /* #d4fde1 */
+  --cl-sun-light-green: 190, 232, 204; /* #bee8cc */
+  --cl-gray: 243, 245, 246;        /* #f3f5f6 */
+  --cl-white: 255, 255, 255;       /* #ffffff */
+  --cl-accent: 56, 174, 95;        /* #38ae5f */
+  --cl-alert: 238, 50, 61;         /* #ee323d */
+
+
   --green-linear: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
 
   --black-transparrent-1: rgba(18, 20, 23, 0.1);
