@@ -4,6 +4,14 @@ body {
   background-color: var(--white);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
 .current {
   position: relative;
 }
@@ -13,15 +21,8 @@ body {
   position: absolute;
   bottom: -4px;
   left: 0;
-  width: 37px;
+  width: 100%;
   height: 2px;
   background-color: var(--green);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-ul {
-  list-style: none;
-}
