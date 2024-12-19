@@ -65,3 +65,17 @@
       max-width: 564px;
     }
   }
+
+  .cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.714;
+    text-align: center;
+    max-width: 295px;
+    width: 100%;
+    padding: 14px 0;
+    text-decoration: none;
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  }
