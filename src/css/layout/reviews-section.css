@@ -1,0 +1,112 @@
+/* ================================== Mobile First ==================================*/
+.reviews-description {
+  display: block;
+  margin: 0 auto 40px;
+  color: rgba(var(--cl-black), 50%);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.reviews-item {
+  width: 335px;
+  height: 278px;
+  flex-shrink: 0;
+  background-color: rgb(var(--cl-gray));
+  padding: 20px 20px 40px 20px;
+  border-radius: 16px;
+  display: none;
+}
+
+.reviews-item:nth-child(1) {
+  display: block;
+}
+
+.reviews-item-header {
+  background-color: rgb(var(--cl-green));
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviews-item-name {
+  color: rgb(var(--cl-white));
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.reviews-item-role {
+  color: rgba(var(--cl-white), 50%);
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.reviews-item-feedback {
+  display: block;
+  width: 267px;
+  margin: 0 auto;
+  color: rgba(var(--cl-black), 50%);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* ================================== Tablet Style ==================================*/
+
+@media screen and (min-width: 768px) {
+  .reviews-description {
+    width: 647px;
+    margin-bottom: 64px;
+  }
+
+  .reviews-description {
+    width: 647px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .reviews-item:nth-child(-n+2) {
+    display: block;
+  }
+
+  .reviews-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews-item {
+    width: 336px;
+    height: 326px;
+  }
+  .reviews-item-header {
+    margin-bottom: 32px;
+  }
+
+  .reviews-item-feedback {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+}
+
+/* ================================== Desktop Style ==================================*/
+
+@media screen and (min-width: 1280px) {
+
+  .reviews-item:nth-child(-n+3) {
+    display: block;
+  }
+
+  .reviews-list {
+    justify-content: space-evenly;
+  }
+
+  .reviews-item {
+    width: 320px;
+  }
+
+}
