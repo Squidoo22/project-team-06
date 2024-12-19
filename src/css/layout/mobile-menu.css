@@ -1,0 +1,105 @@
+/* #region  dialog */
+.mobile-menu {
+  padding: 0;
+  border: 0;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0 0 0 auto;
+}
+
+.mobile-menu::backdrop {
+  background: rgb(var(--cl-black) / 40%);
+}
+
+/*   Open state of the dialog  */
+.mobile-menu[open] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*   Closed state of the dialog   */
+.mobile-menu {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity var(--transition-duration) var(--transition-func),
+    transform var(--transition-duration) var(--transition-func),
+    overlay var(--transition-duration) var(--transition-func) allow-discrete,
+    display var(--transition-duration) var(--transition-func) allow-discrete;
+}
+
+/*   Before-open state  */
+@starting-style {
+  .mobile-menu[open] {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Transition the :backdrop when the dialog modal is promoted to the top layer */
+.mobile-menu::backdrop {
+  background-color: rgb(0 0 0 / 0%);
+  transition: display var(--transition-duration) allow-discrete,
+    overlay var(--transition-duration) allow-discrete,
+    background-color var(--transition-duration);
+}
+
+.mobile-menu[open]::backdrop {
+  background-color: rgb(var(--cl-black) / 40%);
+}
+
+@starting-style {
+  .mobile-menu[open]::backdrop {
+    background-color: rgb(var(--cl-black) / 0%);
+  }
+}
+
+/* #endregion  dialog */
+
+.mobile-menu-container {
+  background-color: var(--color-green);
+  width: 240px;
+  color: var(--color-white);
+  padding: 20px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-container {
+    width: 384px;
+  }
+}
+
+.mobile-nav {
+  color: var(--color-white);
+  display: block;
+}
+
+.mobile-nav .header-nav-item:not(:first-child) {
+  margin-top: 20px;
+}
+.mobile-nav .header-nav-link {
+  text-align: center;
+}
+.close-btn {
+  align-self: self-end;
+}
+
+@media screen and (min-width: 768px) {
+  .close-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.mobile-socials .social-link {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-socials .social-link:hover {
+  border-color: var(--color-white);
+}

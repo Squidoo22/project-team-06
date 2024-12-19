@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1">
 <defs>
-<symbol fill="orange
-" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 28" id="icon-menu">
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 28" id="icon-menu">
     <line x1="7.58691" y1="4.43939" x2="38.5" y2="4.43939" stroke="#121417" stroke-width="3" stroke-linecap="round"></line>
     <line x1="7.58691" y1="21.4091" x2="38.5" y2="21.4091" stroke="#121417" stroke-width="3" stroke-linecap="round"></line>
     <line x1="17.1521" y1="12.9243" x2="38.4999" y2="12.9243" stroke="#121417" stroke-width="3" stroke-linecap="round"></line>
@@ -15,6 +14,10 @@
 </symbol>
 <symbol id="icon-youtube" viewBox="0 0 46 32">
 <path d="M35.929 0.444c-2.116-0.124-6.471-0.249-13.067-0.249h-0.871c-6.347 0-10.578 0.124-12.693 0.373-2.862 0.249-4.853 0.996-5.973 1.991-0.996 0.871-1.742 2.489-1.991 4.604-0.124 1.369-0.249 4.231-0.249 8.587v0.622c0 4.107 0.124 6.969 0.373 8.338 0.373 1.991 0.996 3.484 2.24 4.356 1.244 0.996 3.36 1.618 6.347 1.867 2.116 0.124 6.471 0.249 13.067 0.249h0.871c6.347 0 10.578-0.124 12.693-0.373 2.862-0.249 4.853-0.996 5.973-1.991 0.996-0.871 1.742-2.489 1.991-4.604 0.124-1.369 0.249-4.231 0.249-8.587v-0.622c0-4.107-0.124-6.969-0.373-8.338-0.373-1.991-0.996-3.484-2.24-4.356-1.244-0.996-3.36-1.618-6.347-1.867zM31.076 15.751l-13.689 8.213v-16.427l13.689 8.213z"/>
+</symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+      <path fill="none" stroke="#fff" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M24 8l-16 16"></path>
+      <path fill="none" stroke="#fff" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 8l16 16"></path>
 </symbol>
 </defs>
 </svg>
