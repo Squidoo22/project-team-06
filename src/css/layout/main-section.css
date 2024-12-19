@@ -1,0 +1,23 @@
+.hero-content {
+    padding-top: 8px;
+  }
+  
+  .hero-content .hero-inner {
+    position: relative;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        357.37deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+      ),
+      url('./src/img/main-section/main-mobile.jpg');
+    padding: 0 20px;
+    padding-top: 425px;
+    padding-bottom: 72px;
+    border-radius: 16px;
+    max-width: 1192px;
+    margin: 0 auto;
+  }
