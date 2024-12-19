@@ -1,3 +1,5 @@
+/* Hero section */
+
 .hero-content {
     padding-top: 8px;
   }
@@ -21,8 +23,84 @@
     max-width: 1192px;
     margin: 0 auto;
   }
-
-
+  
+  @media (min-resolution: 192dpi) {
+    .hero-content .hero-inner {
+      background-image: linear-gradient(
+          357.37deg,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0)
+        ),
+        url('./src/img/main-section/main-mobile@2x.jpg');
+    }
+  }
+  
+  @media (min-resolution: 384dpi) {
+    .hero-content .hero-inner {
+      background-image: linear-gradient(
+          357.37deg,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0)
+        ),
+        url('./src/img/main-section/main-mobile_2x.avif');
+    }
+  }
+  
+  .hero-content .hero-heading {
+    margin-bottom: 40px;
+    animation: fade-in 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+  }
+  
+  .scroll-down-link {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-color: var(--white);
+    border-radius: 50%;
+  }
+  
+  .cta-button {
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  }
+  
+  .apply-now-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.714;
+    text-align: center;
+    max-width: 295px;
+    width: 100%;
+    padding: 14px 0;
+    text-decoration: none;
+  }
+  
+  .scroll-down-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-in-right 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s both;
+  }
+  
+  .scroll-down-link:hover,
+  .scroll-down-link:focus {
+    background-color: var(--primary-color);
+  }
+  
+  .scroll-down-link:hover .scroll-icon,
+  .scroll-down-link:focus .scroll-icon {
+    fill: var(--white);
+  }
+  
+  .scroll-icon {
+    fill: var(--primary-color);
+  }
+  
+  /* Media */
   @media screen and (min-width: 768px) {
     .hero-content .hero-inner {
       padding-top: 260px;
@@ -36,23 +114,43 @@
         url('./src/img/main-section/main-tablet.jpg');
     }
   
+    .apply-now-button {
+      max-width: 306px;
+    }
+  
+    @media (min-resolution: 192dpi) {
+      .hero-content .hero-inner {
+        background-image: linear-gradient(
+            95.97deg,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0)
+          ),
+          url('./src/img/main-section/main-tablet@2x.jpg');
+      }
+    }
+  
     .hero-content .hero-heading {
       max-width: 488px;
+    }
+  
+    .scroll-down-link {
+      position: absolute;
+      right: 32px;
+      bottom: 32px;
+      width: 48px;
+      height: 48px;
     }
   
     .hero-content {
       padding-top: 32px;
     }
   }
-
-
+  
   @media screen and (min-width: 1280px) {
     .hero-content .hero-inner {
       background-size: cover;
       padding-top: 164px;
       padding-bottom: 163px;
-      padding-left: 64px;
-      padding-right: 64px;
       background-image: linear-gradient(
           95.97deg,
           rgba(0, 0, 0, 0.4),
@@ -64,53 +162,21 @@
     .hero-content .hero-heading {
       max-width: 564px;
     }
-  }
-
-  .cta-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    line-height: 1.714;
-    text-align: center;
-    max-width: 295px;
-    width: 100%;
-    padding: 14px 0;
-    text-decoration: none;
-    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
-  }
-
-
-  .scroll-down-link {
-    position: absolute;
-    right: 14px;
-    bottom: 14px;
-    display: block;
-    width: 38px;
-    height: 38px;
-    background-color: var(--white);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: slide-in-right 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s both;
+  
+    .scroll-down-link {
+      position: absolute;
+      right: 32px;
+      bottom: 32px;
+    }
+  
+    .hero-content {
+      padding-top: 16px;
+      padding-left: 64px;
+      padding-right: 64px;
+    }
   }
   
-  .scroll-down-link:hover,
-  .scroll-down-link:focus {
-    background-color: var(--primary-color);
-  }
-  
-  .scroll-icon {
-    fill: var(--primary-color);
-  }
-  
-  .scroll-down-link:hover .scroll-icon,
-  .scroll-down-link:focus .scroll-icon {
-    fill: var(--white);
-  }
-
-
+  /* Animations */
   @keyframes fade-in {
     from {
       opacity: 0;
