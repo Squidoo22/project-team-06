@@ -44,3 +44,24 @@
       padding-top: 32px;
     }
   }
+
+
+  @media screen and (min-width: 1280px) {
+    .hero-content .hero-inner {
+      background-size: cover;
+      padding-top: 164px;
+      padding-bottom: 163px;
+      padding-left: 64px;
+      padding-right: 64px;
+      background-image: linear-gradient(
+          95.97deg,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0)
+        ),
+        url('./src/img/main-section/main-desktop.jpg');
+    }
+  
+    .hero-content .hero-heading {
+      max-width: 564px;
+    }
+  }
