@@ -1,1 +1,27 @@
-<section class="about section-about-us" id="about-us"></section>
+<section class="about section-about-us" id="about-us">
+  <div class="container header-container">
+    <h2 class="section-title">
+      About
+      <span>Us</span>
+    </h2>
+    <p class="lessons__subtext">
+      We are dedicated to providing engaging and effective English language courses in a supportive and stimulating learning environment
+    </p>
+    <ul class="about-list">
+      <load src="/partials/card-about.html" number="01" text="Expert, innovative teaching staff"/>
+      <load src="/partials/card-about.html" number="02" text="Wide range of course levels and options"/>
+      <load src="/partials/card-about.html" number="03" text="Multicultural learning environment"/>
+      <load src="/partials/card-about.html" number="04" text="Comprehensive language support services"/>
+      <li class="about-list__media">
+        <picture>
+          <!-- AVIF для екранів з високою роздільною здатністю -->
+          <source srcset="/img/about-section/about-bg-image@2x.avif 2x, /img/about-section/about-bg-image.avif 1x" type="image/avif">
+          <!-- PNG для fallback -->
+          <source srcset="/img/about-section/about-bg-image@2x.png 2x, /img/about-section/about-bg-image.png 1x" type="image/png">
+          <!-- Зображення для браузерів, що не підтримують picture -->
+          <img src="/img/about-section/about-bg-image.png" alt="Опис фонової картинки">
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
