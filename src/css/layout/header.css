@@ -6,6 +6,13 @@
     rgb(255 255 255 / 55%)
   );
   z-index: 2;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-func);
+  transition-property: transform;
+}
+
+.headaer-hidden {
+  transform: translateY(-100%);
 }
 
 @media screen and (min-width: 1280px) {

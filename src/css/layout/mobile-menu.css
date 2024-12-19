@@ -79,9 +79,10 @@
   display: block;
 }
 
-.mobile-nav .header-nav-item:not(:first-child) {
-  margin-top: 20px;
+.mobile-nav .header-nav-link {
+  padding: 10px;
 }
+
 .mobile-nav .header-nav-link {
   text-align: center;
 }
