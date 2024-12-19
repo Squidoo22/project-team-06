@@ -79,3 +79,33 @@
     text-decoration: none;
     animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
   }
+
+
+  .scroll-down-link {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-in-right 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s both;
+  }
+  
+  .scroll-down-link:hover,
+  .scroll-down-link:focus {
+    background-color: var(--primary-color);
+  }
+  
+  .scroll-icon {
+    fill: var(--primary-color);
+  }
+  
+  .scroll-down-link:hover .scroll-icon,
+  .scroll-down-link:focus .scroll-icon {
+    fill: var(--white);
+  }
