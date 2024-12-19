@@ -1,5 +1,9 @@
 .proposal-wrapper {
-  background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  background: linear-gradient(
+    80deg,
+    var(--color-green) 0%,
+    var(--color-green-pseudo) 100%
+  );
   padding: 40px 20px;
   border-radius: 16px;
   overflow: hidden;
@@ -9,11 +13,11 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 1.05;
-  color: #fff;
+  color: var(--color-white);
   margin-bottom: 65px;
 
   span {
-    color: #bee8cc;
+    color: var(--color-green-pseudo);
   }
 }
 
@@ -22,7 +26,7 @@
 }
 
 .proposal-card {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   padding: 40px 20px;
   border-radius: 16px;
   position: relative;
@@ -42,7 +46,7 @@
 
 .proposal-card-wrap::before {
   transform: rotate(-9deg);
-  background-color: #d4fde1;
+  background-color: var(--color-light-green);
 }
 
 .proposal-card-wrap::after {
@@ -74,7 +78,7 @@
   content: '';
   width: 20px;
   height: 20px;
-  background-color: #4dc274;
+  background-color: var(--color-green);
   border-radius: 50%;
   flex-shrink: 0;
   background-position: center;
@@ -87,17 +91,17 @@
   font-size: 14px;
   line-height: 1.42857;
   letter-spacing: -0.02em;
-  color: #121417;
+  color: var(--color-black);
 }
 
 .proposal-card-anchor {
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: #fff;
   border-radius: 12px;
-  background-color: #4dc274;
+  background-color: var(--color-green);
   width: 100%;
   display: block;
   text-decoration: none;
@@ -159,6 +163,14 @@
     background-size: 214px;
     padding: 64px 32px;
     border-radius: 30px;
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .proposal-card {
+      background-image: url(../../img/proposal-section/books@2x.png);
+    }
   }
 
   .proposal-card-wrap::before,
