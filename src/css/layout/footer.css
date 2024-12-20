@@ -1,13 +1,12 @@
 /* ================================== Mobile First ==================================*/
-
 .footer-section {
   background: #121417;
   font-size: 14px;
 }
 
 .footer-container {
-  padding: 40px 20px 20px;
-  max-width: 1024px;
+  padding: 40px 0 20px;
+  /* max-width: 1024px; */
   margin: 0 auto;
 }
 
@@ -133,7 +132,7 @@
     margin-bottom: 32px;
   }
   .footer-container {
-    padding: 32px 32px 16px 32px;
+    padding: 32px 0 16px;
   }
   .footer-content-wrapper {
     flex-direction: row;
@@ -156,7 +155,7 @@
     margin-bottom: 64px;
   }
   .footer-container {
-    padding: 64px 0 23px;
+    padding: 64px 64px 23px;
   }
   .footer-policy {
     padding-top: 23px;
