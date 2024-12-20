@@ -2,20 +2,12 @@
     text-align: center;
   }
 .section-teachers-title {
-    width: 832px;
-    height: 48px;
     font-family: Manrope;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -0.02em;
     text-align: center;
-}
-.highlight {
-    background-color: #d4fde1; 
-    border-radius: 8px;       
-    padding: 0 8px;          
-    display: inline-block;   
 }
 .section-teachers-desc {
     font-family: Manrope;
@@ -24,6 +16,10 @@
     line-height: 30px;
     text-align: center;
     color:rgba(18, 20, 23, 0.5);
+    width: 709px;
+    display:block;
+    margin: 0 auto 64px;
+
 }
 .teachers-list {
     display: flex;
@@ -35,10 +31,9 @@
     max-width: 250px;
     text-align: center;
   }
-.teacher_photo {
-    text-align: center;
+.teacher-photo {
     border-radius: 50%;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
     display: block;  
 }
 .teachers-list-text {
@@ -50,3 +45,76 @@
     color: rgba(18, 20, 23, 0.5);
 
 }
+
+/* ================================== Mobile First ==================================*/
+.teachers-list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .teacher-img {
+    border-radius: 50%;
+    margin: 0 auto 16px;
+  }
+  
+  .teachers-list .teacher:nth-child(1) .teacher-img {
+    background-color: gray;
+  }
+  .teachers-list .teacher:nth-child(2) .teacher-img {
+    background-color: #D4B2AF;
+  }
+  .teachers-list .teacher:nth-child(3) .teacher-img {
+    background-color: #DFCC9F;
+  }
+  .teachers-list .teacher:nth-child(4) .teacher-img {
+    background-color: #D1DFC3;
+  }
+  
+  .teacher-name {
+    text-align: center;
+    margin-bottom: 8px;
+    color: rgb(var(--cl-black));
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  
+  .teachers-list-text {
+    text-align: center;
+    color: rgba(var(--cl-black), 50%);
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  /* ================================== Tablet Style ==================================*/
+  @media screen and (min-width: 768px) {
+    .teachers-list {
+      width: 576px;
+      gap: 32px;
+    }
+  
+    .teacher {
+      width: calc((100% - 32px) / 2);
+    }
+  
+    .teachers-list-text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* ================================== Desktop Style ==================================*/
+  @media screen and (min-width: 1280px) {
+    .teachers-list {
+      width: 1024px;
+    }
+  
+    .teacher {
+      width: calc((100% - 32px * 3) / 4);
+    }
+  }
+  
