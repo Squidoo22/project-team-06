@@ -1,0 +1,219 @@
+.proposal-wrapper {
+  background: linear-gradient(
+    80deg,
+    var(--color-green) 0%,
+    var(--color-green-pseudo) 100%
+  );
+  padding: 40px 20px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.proposal-capture {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.05;
+  color: var(--color-white);
+  margin-bottom: 65px;
+
+  span {
+    color: var(--color-green-pseudo);
+  }
+}
+
+.proposal-card-wrap {
+  position: relative;
+}
+
+.proposal-card {
+  background-color: var(--color-white);
+  padding: 40px 20px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.proposal-card-wrap::before,
+.proposal-card-wrap::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.proposal-card-wrap::before {
+  transform: rotate(-9deg);
+  background-color: var(--color-light-green);
+}
+
+.proposal-card-wrap::after {
+  transform: rotate(11deg);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.proposal-card-title {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #121417;
+  margin-bottom: 20px;
+}
+.proposal-card-list {
+  margin-bottom: 20px;
+}
+.proposal-card-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.proposal-card-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.proposal-card-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-green);
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../../img/proposal-section/icon.svg);
+}
+
+.proposal-card-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+}
+
+.proposal-card-anchor {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #fff;
+  border-radius: 12px;
+  background-color: var(--color-green);
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .proposal-wrapper {
+    padding: 64px 20px 92px;
+  }
+
+  .proposal-capture {
+    font-size: 60px;
+    line-height: 1.17;
+    margin-bottom: 83px;
+    padding-left: 12px;
+  }
+
+  .proposal-card-title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .proposal-card-text {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .proposal-card-list {
+    max-width: 451px;
+    margin-bottom: 32px;
+  }
+
+  .proposal-card-item {
+    gap: 16px;
+  }
+
+  .proposal-card-item::before {
+    width: 28px;
+    height: 28px;
+  }
+
+  .proposal-card-anchor {
+    padding: 16px 64px;
+    min-width: 306px;
+    width: unset;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .proposal-card {
+    background-image: url(../../img/proposal-section/books.png);
+    background-position: right -48px bottom 63px;
+    background-repeat: no-repeat;
+    background-size: 214px;
+    padding: 64px 32px;
+    border-radius: 30px;
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .proposal-card {
+      background-image: url(../../img/proposal-section/books@2x.png);
+    }
+  }
+
+  .proposal-card-wrap::before,
+  .proposal-card-wrap::after {
+    border-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .proposal-wrapper {
+    padding: 64px 64px 142px;
+  }
+
+  .proposal-capture {
+    margin-bottom: 133px;
+    max-width: 776px;
+  }
+
+  .proposal-card {
+    padding: 64px;
+  }
+
+  .proposal-card-list {
+    max-width: 654px;
+    margin-bottom: 39px;
+  }
+  .proposal-card {
+    background-position: right 0 bottom 80px;
+  }
+
+  .proposal-card-wrap::before {
+    height: 463px;
+    width: 1050px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(-9deg);
+  }
+
+  .proposal-card-wrap::after {
+    height: 402px;
+    width: 1011px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+}
