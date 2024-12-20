@@ -1,0 +1,164 @@
+/* ================================== Mobile First ==================================*/
+
+.footer-section {
+  background: #121417;
+  font-size: 14px;
+}
+
+.footer-container {
+  padding: 40px 20px 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.logo-footer {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo-green {
+  color: var(--color-green);
+}
+
+.footer-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-address-item span {
+  color: rgba(var(--cl-white), 0.6);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.28px;
+  opacity: 0.9;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.footer-address-item a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 600;
+  line-height: 1.2;
+  font-style: normal;
+  transition: var(--transition-dur-and-func);
+}
+
+.footer-address-item a:hover,
+.footer-nav-item a:hover,
+.footer-address-item a:focus,
+.footer-nav-item a:focus {
+  color: var(--color-dark-green);
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-nav-item a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 600;
+  transition: var(--transition-dur-and-func);
+}
+
+.footer-social-icon {
+  fill: var(--color-white);
+  opacity: 0.8;
+  transition: var(--transition-dur-and-func);
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-link {
+  height: 42px;
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(var(--cl-white), 0.1);
+  transition: var(--transition-dur-and-func);
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  fill: rgb(var(--cl-green));
+}
+
+.footer-social-link:hover .footer-social-link,
+.footer-social-link:focus .footer-social-link {
+  border: 1px solid rgba(var(--cl-green), 0.1);
+}
+
+.footer-policy {
+  padding-top: 20px;
+  border-top: 1px solid rgba(var(--cl-white), 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: rgba(var(--cl-white), 0.6);
+  letter-spacing: -0.28px;
+  opacity: 0.9;
+}
+
+.footer-policy-bottom {
+  display: flex;
+  gap: 18px;
+}
+
+/* ================================== Tablet Style ==================================*/
+
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    margin-bottom: 32px;
+  }
+  .footer-container {
+    padding: 32px 32px 16px 32px;
+  }
+  .footer-content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 110px;
+  }
+  .footer-policy {
+    padding-top: 16px;
+  }
+  .footer-policy {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* ================================== Desktop Style ==================================*/
+
+@media screen and (min-width: 1280px) {
+  .footer-content-wrapper {
+    margin-bottom: 64px;
+  }
+  .footer-container {
+    padding: 64px 0 23px;
+  }
+  .footer-policy {
+    padding-top: 23px;
+  }
+}
