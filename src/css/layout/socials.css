@@ -49,7 +49,9 @@
   height: 100%;
 }
 
-.socials-header .social-link:hover {
+.socials-header
+.social-link:hover,
+.social-link:focus {
   fill: var(--color-green);
   border-color: var(--color-green-01);
 }

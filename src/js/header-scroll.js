@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
           currentScrollPosition > 50
         ) {
           // User is scrolling down, hide the header
-          header.classList.add('headaer-hidden');
+          header.classList.add('header-hidden');
         } else if (currentScrollPosition < lastScrollPosition) {
           // User is scrolling up, show the header
-          header.classList.remove('headaer-hidden');
+          header.classList.remove('header-hidden');
         }
       }
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   window.addEventListener('resize', () => {
-    header.classList.remove('headaer-hidden');
+    header.classList.remove('header-hidden');
   });
 });
 

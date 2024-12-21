@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   background: linear-gradient(
-    rgb(255 255 255 / 100%) 10%,
-    rgb(255 255 255 / 55%)
+    rgb(255, 255, 255) 10%,
+    rgb(255, 255, 255) 55%
   );
   z-index: 2;
   transition-duration: var(--transition-duration);
@@ -11,7 +11,7 @@
   transition-property: transform;
 }
 
-.headaer-hidden {
+.header-hidden {
   transform: translateY(-100%);
 }
 
@@ -99,7 +99,8 @@ a.logo.header-logo {
     transition-property: left;
   }
 
-  .header-nav-link:hover::after {
+  .header-nav-link:hover::after
+  .header-nav-link:focus::after {
     left: 0;
   }
 }
