@@ -7,7 +7,7 @@
   --color-grey: #f3f5f6;
   --color-white: #ffffff;
 
-  --cl-black: 18 20 23; /* #121417 */
+  --cl-black: 18, 20, 23; /* #121417 */
   --cl-green: 77, 194, 116; /* #4dc274 */
   --cl-light-green: 212, 253, 225; /* #d4fde1 */
   --cl-sun-light-green: 190, 232, 204; /* #bee8cc */
@@ -25,4 +25,6 @@
   --transition-func: cubic-bezier(0.4, 0, 0.2, 1);
 
   --color-green-01: #4dc2741a;
+
+  --material-hover-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
