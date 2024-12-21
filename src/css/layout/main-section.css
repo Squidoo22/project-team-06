@@ -58,6 +58,11 @@
   animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
 
+.apply-now-button:hover,
+.apply-now-button:focus {
+  background-color: var(--color-dark-green);
+}
+
   @media (min-resolution: 192dpi) {
     .hero-content .hero-inner {
       background-image: linear-gradient(

@@ -99,7 +99,10 @@ a.logo.header-logo {
     transition-property: left;
   }
 
-  .header-nav-link:hover::after
+  .header-nav-link:hover::after {
+    left: 0;
+  }
+
   .header-nav-link:focus::after {
     left: 0;
   }
