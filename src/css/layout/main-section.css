@@ -48,10 +48,10 @@
   border-radius: 12px;
   cursor: pointer;
   color: var(--color-white);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.55556;
-  padding: 15px 63px;
+  line-height: 1.71;
+  padding: 14px 78px;
   background-color: var(--color-green);
   transition: .25s cubic-bezier(.4, 0, .2, 1);
   transition-property: background-color, border-color;
@@ -124,7 +124,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    line-height: 1.714;
+    line-height: 1.71;
     text-align: center;
     max-width: 295px;
     width: 100%;
@@ -168,7 +168,10 @@
     }
 
     .apply-now-button {
-      max-width: 306px;
+      max-width: 308px;
+      font-size: 18px;
+      line-height: 1.56;
+      padding: 16px 64px;
     }
 
     @media (min-resolution: 192dpi) {
@@ -200,6 +203,10 @@
   }
 
   @media screen and (min-width: 1280px) {
+    .hero-content {
+      padding-top: 16px;
+    }
+
     .hero-content .hero-inner {
       background-size: cover;
       padding-top: 164px;
@@ -234,12 +241,6 @@
       position: absolute;
       right: 32px;
       bottom: 32px;
-    }
-
-    .hero-content {
-      padding-top: 16px;
-      padding-left: 64px;
-      padding-right: 64px;
     }
   }
 
