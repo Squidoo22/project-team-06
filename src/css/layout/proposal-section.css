@@ -109,6 +109,11 @@
   border: none;
   padding-top: 14px;
   padding-bottom: 14px;
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.proposal-card-anchor:hover {
+  background-color: var(--color-dark-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -166,8 +171,8 @@
   }
 
   @media screen and (min-resolution: 2dppx),
-  (min-resolution: 192dpi),
-  (-webkit-min-device-pixel-ratio: 2) {
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
     .proposal-card {
       background-image: url(../../img/proposal-section/books@2x.png);
     }
