@@ -63,6 +63,8 @@
 
   .section-description {
     margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 1.67;
   }
 
   .text-accent::before {
@@ -80,5 +82,10 @@
   .section-about-us {
     padding-top: 96px;
     padding-bottom: 75px;
+  }
+
+  .padding-xl {
+      padding-left: 64px;
+      padding-right: 64px;
   }
 }
