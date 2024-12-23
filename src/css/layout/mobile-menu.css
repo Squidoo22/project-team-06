@@ -8,7 +8,7 @@
 }
 
 .mobile-menu::backdrop {
-  background: rgb(var(--cl-black) / 40%);
+  background: rgb(var(--color-backdrop) / 40%);
 }
 
 /*   Open state of the dialog  */
@@ -44,12 +44,12 @@
 }
 
 .mobile-menu[open]::backdrop {
-  background-color: rgb(var(--cl-black) / 40%);
+  background-color: rgb(var(--color-backdrop) / 40%);
 }
 
 @starting-style {
   .mobile-menu[open]::backdrop {
-    background-color: rgb(var(--cl-black) / 0%);
+    background-color: rgb(var(--color-backdrop) / 0%);
   }
 }
 
